@@ -14,7 +14,7 @@
 #include "types.h"
 
 #define SYS_KEXEC 153
-#define SYS_KEXEC_NARGS 5
+#define SYS_KEXEC_NARGS 6
 
 struct sys_kexec_args {
 	void *image;
