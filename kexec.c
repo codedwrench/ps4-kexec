@@ -148,9 +148,9 @@ int sys_kexec(void *td, struct sys_kexec_args *uap)
     // Initialize bp
     // TODO should probably do this from cpu_quiesce_gate, then bp doesn't
     // need to be allocated here, just placed directly into low mem
-    prepare_boot_params(bp, image);
-
     set_nix_info(image, bp, initramfs, initramfs_size, cmd_line, uap->vram_gb);
+
+    prepare_boot_params(bp, image);
 
     // Hook the final ICC shutdown function
     if (!kernel_hook_install(hook_icc_query_nowait, icc_query_nowait)) {
