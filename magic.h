@@ -246,7 +246,7 @@
 #define kern_off_copyinstr 0x28FEA0  //mira
 #define kern_off_kmem_alloc_contig 0x49DF40 
 #define kern_off_kmem_free 0x1755B0  //mira
-#define kern_off_pmap_extract 0x1A4DE0
+#define kern_off_pmap_extract 0x1A6D70
 #define kern_off_pmap_protect 0x1A7F10
 #define kern_off_sched_pin 0x191410
 #define kern_off_sched_unpin 0x191430
@@ -255,7 +255,7 @@
 #define kern_off_icc_query_nowait 0x1629D0
 #define kern_off_kernel_map 0x21405B8 //mira
 #define kern_off_sysent	0x1122340 //mira
-#define kern_off_kernel_pmap_store 0x21B0588
+#define kern_off_kernel_pmap_store 0x215EA40
 #define kern_off_Starsha_UcodeInfo 0
 #define kern_off_gpu_devid_is_9924 0x4E4560
 #define kern_off_gc_get_fw_info	0x4F8FE0
