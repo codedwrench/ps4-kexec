@@ -237,4 +237,33 @@
 #define kern_off_edid 0x27645e0
 #define kern_off_wlanbt 0xdecb0
 #define kern_off_kern_reboot 0x002CD780 //mira
+
+#elif defined PS4_7_55
+#define kern_off_printf	0x26F740   //mira
+#define kern_off_snprintf 0x26FA40  //mira
+#define kern_off_copyin	0x28F9F0  //mira
+#define kern_off_copyout 0x28F900  //mira
+#define kern_off_copyinstr 0x28FEA0  //mira
+#define kern_off_kmem_alloc_contig 0x49DF40 
+#define kern_off_kmem_free 0x1755B0  //mira
+#define kern_off_pmap_extract 0x1A4DE0
+#define kern_off_pmap_protect 0x1A7F10
+#define kern_off_sched_pin 0x191410
+#define kern_off_sched_unpin 0x191430
+#define kern_off_smp_rendezvous	0x26CEC0
+#define kern_off_smp_no_rendevous_barrier 0x26CC90
+#define kern_off_icc_query_nowait 0x1629D0
+#define kern_off_kernel_map 0x21405B8 //mira
+#define kern_off_sysent	0x1122340 //mira
+#define kern_off_kernel_pmap_store 0x21B0588
+#define kern_off_Starsha_UcodeInfo 0
+#define kern_off_gpu_devid_is_9924 0x4E4560
+#define kern_off_gc_get_fw_info	0x4F8FE0
+#define kern_off_pml4pml4i 0x215EA30 // (lea     rdx, kern_off_pml4pml4i => movsxd  rdi, cs:kern_off_pml4pml4i)c
+#define kern_off_dmpml4i 0x215EA34 
+#define kern_off_dmpdpi	0x215EA38
+#define kern_off_eap_hdd_key 0x26D4C90
+#define kern_off_edid 0x275C0D0
+#define kern_off_wlanbt	0xE3B70
+#define kern_off_kern_reboot 0x02CD780 // mira
 #endif
